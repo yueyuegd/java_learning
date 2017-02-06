@@ -1,0 +1,5 @@
+HashMap实现了接口Map继承与AbstractMap
+HashMap的三个构造方法:
+1.HashMap():构造一个空的HashMap,拥有初始的容量(16)和初始的加载因子(0.75)
+2.HashMap(int):构造一个指定大小和默认加载因子的HashMap
+3.HashMap(int,float):构造一个指定容量和指定加载因子的HashMap

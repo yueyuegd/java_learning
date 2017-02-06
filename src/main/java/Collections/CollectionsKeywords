@@ -1,0 +1,16 @@
+有关集合的关键点:
+1.Collection接口:是最基本的集合接口
+2.List接口:是Collection的直接子接口,List所代表的是有序的集合,它用某种特定的插入顺序来维护
+它的元素顺序,用户可以对列表中每个元素的位置进行精确的控制,可以根据整数索引来访问元素,实现List
+接口的类有:ArrayList,LinkedList,Vector和Stack
+3.ArrayList:实现了List的接口,是一个动态数组,允许任何符合规则的元素或者是null的插入,每一个ArrayList都要一个初始容量(10),
+表示数组的大小,每次向容器中添加元素时都会进行容量检查,在快要溢出的时候进行扩容,ArrayList适合于随机访问,属于非同步的.
+4.LinkedList:也是实现了List的接口,是一个双向链表,除了有ArrayList的那些基本操作外,还可以在链表的首位进行
+get,remove,insert操作
+5.Vector:与ArrayList相似,但是Vector是同步的,所以它是线程安全的,操作与ArrayList相似.
+6.Stack:继承于Vector,实现了后进先出的堆栈
+7.Set接口:一种不包含重复元素的集合,实现了Set接口的集合有:EnumSet,HashSet和TreeSet
+8.Map接口:与List,Set不同,Map是由一组键值对组成的集合,它也没有继承Collection,在Map中它保证了
+key与value之间的对应关系,一个key对应一个value,所以key值是不可以相同的,但是value是可以相同的.
+实现了Map的有:HashMap,TreeMap,HashTable,Properties,EnumMap
+

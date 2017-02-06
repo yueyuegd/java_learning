@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>借款人履约保证保险投保单</title>
+</head>
+<body>
+    <div id="table">
+        <div id="logo">
+            <p align="center"><img src="biglogo.jpg" style="width:30%"></p>
+        </div>
+        <div id="title" align="center">
+            <h2 style="display: inline">借款人履约保证保险投保单&nbsp;&nbsp;&nbsp;&nbsp;</h2>No:
+        </div>
+        <div id="line">
+            <hr size="3px" color="red"/>
+        </div>
+        <div id="desc" style="margin-left: 200px;text-indent: 2em" >
+        <span>
+            </br>
+        </span>
+        </div>
+
+        <div style="text-indent: 2em">
+            <b>请您仔细阅读保险条款，尤其是字体加粗标注部分的条款内容，并听取保险公司业务人员的说明，如对保险公司业务
+                人员的说明不明白或有异议的，请在填写本投保单之前向保险公司业务人员进行询问，如未询问，视同已经对条款内容完
+                全理解并无异议。</b>
+        </div>
+
+        <table border="1 solid black" cellspacing="0" cellpadding="0">
+            <tr>
+                <td rowspan="4" style="width: 15%;text-align: center;line-height: 30px;">投保人(被保证人)</td>
+                <td colspan="2" style="width: 45%;line-height: 30px;border-right: none;">类型:&nbsp;&nbsp;□ 企业 </td>
+
+                <td style="line-height: 30px;border-left: none;">√个人</td>
+            </tr>
+            <tr>
+
+                <td colspan="2">名称:&nbsp;&nbsp;${realName}</td>
+                <td style="line-height: 30px;">证件号码:&nbsp;&nbsp;${IDCard}</td>
+            </tr>
+            <tr>
+
+                <td colspan="2">详细住址:&nbsp;&nbsp;${addr}</td>
+                <td style="line-height: 30px;">联系电话:&nbsp;&nbsp;${tel}</td>
+            </tr>
+            <tr>
+
+
+                <td colspan="2">经济收入来源:&nbsp;&nbsp;工资收入</td>
+                <td style="line-height: 30px;">年收入:&nbsp;&nbsp;${salrange}</td>
+            </tr>
+            <tr>
+                <td rowspan="4" style="text-align: center;line-height: 30px;">被保险人(权利人)</td>
+                <td colspan="2" style="line-height: 30px;border-right: none;">类型:&nbsp;&nbsp;□ 企业</td>
+                <td style="border-left: none;line-height: 30px;">√个人</td>
+            </tr>
+            <tr>
+                <td colspan="2">名称：欧阳君</td>
+                <td style="line-height: 30px;">证件号码:&nbsp;&nbsp;65422119780901401X</td>
+            </tr>
+            <tr>
+                <td colspan="2">详细住址:&nbsp;&nbsp;上海市黄浦区蒙自西路72弄19号501</td>
+                <td style="line-height: 30px;">联系电话:&nbsp;&nbsp;15000187367</td>
+            </tr>
+            <tr>
+                <td colspan="2">历年不良贷款率:</td>
+                <td style="line-height: 30px;">经营及盈利状况:</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;line-height: 30px;">贷款方式</td>
+                <td colspan="3">有实物资产做抵（质）押 □&nbsp;&nbsp;&nbsp;&nbsp;以其他担保方式贷款（含联保）□&nbsp;&nbsp;&nbsp;&nbsp;信用贷款□</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;line-height: 30px;">借款人性质</td>
+                <td style="line-height: 30px;" colspan="3">√个人&nbsp;&nbsp;&nbsp;&nbsp;农业种养殖大户□&nbsp;&nbsp;&nbsp;&nbsp;城乡创业者（含个体工商户）□&nbsp;&nbsp;&nbsp;&nbsp;初创期小企业□&nbsp;&nbsp;&nbsp;&nbsp;其他□</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;line-height: 30px;">借款用途</td>
+                <td colspan="3">${loanUsage}</td>
+            </tr>
+            <tr>
+                <td rowspan="3" style="text-align: center">抵押物或质押物</td>
+                <td colspan="2">名称:</td>
+                <td style="line-height: 30px;">评估价值(元):</td>
+            </tr>
+            <tr>
+
+                <td colspan="2">抵押/质押合同编号:</td>
+                <td style="line-height: 30px;">借款金额占抵押物评估值的:</td>
+            </tr>
+            <tr>
+
+                <td colspan="3">抵押物登记情况:</td>
+            </tr>
+            <tr>
+                <td rowspan="3" style="text-align: center">保证人(或担保人)</td>
+                <td style="line-height: 30px;">姓名:</td>
+                <td style="line-height: 30px;">性别:</td>
+                <td style="line-height: 30px;">年龄:</td>
+            </tr>
+            <tr>
+
+                <td style="line-height: 30px;">身份证号:</td>
+                <td colspan="2">工作单位:</td>
+            </tr>
+            <tr>
+
+                <td colspan="2">详细家庭住址:</td>
+                <td style="line-height: 30px;">联系电话:</td>
+            </tr>
+            <tr>
+                <td style="line-height: 30px;" colspan="3">贷款金额(万元):${loanPrincaipal}</td>
+                <td style="line-height: 30px;">贷款利率:&nbsp;${loanRate}%</td>
+            </tr>
+            <tr>
+                <td style="border-left: none;line-height: 30px;border-right: none;" colspan="3">还款方式:&nbsp;&nbsp;&nbsp;&nbsp;等额本息√&nbsp;&nbsp;&nbsp;等额本金□&nbsp;&nbsp;&nbsp;
+                按月付息，按季还本□&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按月付息，到期还本□</td>
+                <td style="border-left: none;line-height: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;其他□</span></td>
+            </tr>
+            <tr>
+                <td style="line-height: 30px;" colspan="4">还款期间:
+                自&nbsp;${refundStartTime}&nbsp;零时起至&nbsp;${refundEndTime}&nbsp;二十四时止,共&nbsp;${refundPeriod}&nbsp;个月</td>
+            </tr>
+            <tr>
+                <td style="line-height: 30px;border-right: none" colspan="3">保险金额:(大写)${insuranceSumUp}</td>
+                <td style="border-left: none;line-height: 30px;">(小写)￥${insuranceSumLow}元</td>
+            </tr>
+            <tr>
+                <td style="line-height: 30px;">附加险投保情况:</td>
+                <td colspan="3" style="line-height: 30px;">√无&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    □扩展承保罚息等损失保险 </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="line-height: 30px;">赔偿限额（含附加险）:</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="line-height: 30px;">主险保险费率（%）:${insuranceRate}</td>
+            </tr>
+            <tr>
+                <td style="line-height: 30px;border-right: none" colspan="3">主险保险费:(大写)${mainInsuranceSumUp}</td>
+                <td style="line-height: 30px;border-left: none">(小写)￥${mainInsuranceSumLow}元</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="line-height: 30px;">附加险保险费率（%）:</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="line-height: 30px;border-right: none">附加险保险费:(大写)</td>
+                <td style="line-height: 30px;border-left: none">(小写)￥&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;元</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="line-height: 30px;border-right: none">总保险费:(大写)${totalInsuranceUp}</td>
+                <td style="line-height: 30px;border-left: none">(小写)￥${totalInsuranceLow}</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="line-height: 30px;">免赔额/率:&nbsp;0%</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="line-height: 30px;">交费约定:&nbsp;${repayInsuranceTime}&nbsp;&nbsp;前交清保险费。</td>
+                <td style="line-height: 30px;">司法管辖权:</td>
+
+            </tr>
+            <tr>
+                <td colspan="3" style="line-height: 30px;">保险期间:自&nbsp;${insuranceStartTime}&nbsp;零时起至&nbsp;${insuranceEndTime}&nbsp;二十四时止</td>
+
+                <td>投保月数:共&nbsp;${insurancePeriod}&nbsp;个月</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="line-height: 30px;">赔款等待期:30天</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="line-height: 30px;">合同争议解决方式:&nbsp;&nbsp;&nbsp;&nbsp;√诉讼;
+                    &nbsp;&nbsp;&nbsp;□提交&nbsp;&nbsp;&nbsp;___________________________________仲裁委员会仲裁。</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="line-height: 30px;">有无就本投保标的向其他保险公司投保相同保险? &nbsp;&nbsp;√无 &nbsp;&nbsp;&nbsp;&nbsp;□有（保险公司名称:
+                    ________________________________）。</td>
+            </tr>
+            <tr>
+                <td colspan="4" rowspan="4" style="height: 6em;vertical-align: top;line-height: 30px;">
+                   <div style="margin: 0;">特别约定：</div>
+                   <div style="margin-left: 2em;text-indent: 2em"></div>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+
+            </tr>
+
+
+            <tr>
+                <td rowspan="2" colspan="4">
+                    <p>
+                        <b>投保人声明：本人已经仔细阅读保险条款，
+                            尤其是字体加粗部分的条款内容，并对保险公司就保险条款内容的说明和提示完全理解，
+                            没有异议，申请投保。</b>
+                    </p>
+                    <p style="margin-left: 60%;margin-top: 40px;line-height: 30px;">投保人签章:</p>
+                    <p style="margin-left: 60%;line-height: 30px;">${year} 年${month} 月${day} 日</p>
+                </td>
+            </tr>
+            <tr>
+
+
+
+
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="4">
+                    <div>复核意见:</div>
+                    <p style="margin-top: 50px;">
+                        <div style="float: left;margin-left: 30%;">经办人签章:</div>
+                        <div style="float: left;margin-left: 30%;">复核人签章:</div>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td rowspan="2" style="vertical-align: top;
+                border-bottom: none;line-height: 30px;border-right: none">重要提示:</td>
+                <td colspan="3" style="border-bottom: none;line-height: 30px;border-left: none">
+                    <span><b>1、本投保单在本公司未签发保险单或投保人未按约定交付保险费之前，不发生任何法律效力。</b></span>
+                </td>
+
+            </tr>
+            <tr>
+
+                <td colspan="3" style="border-bottom: none;border-top: none;;line-height: 30px;border-left: none">
+                    <span><b>2、如发现错误，请及时更正。</b></span>
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+</html>
