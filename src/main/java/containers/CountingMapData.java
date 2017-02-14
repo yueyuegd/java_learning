@@ -22,7 +22,8 @@ public class CountingMapData extends AbstractMap<Integer,String>{
         }
     }
 
-    private static class Entry implements Map.Entry<Integer,String>{
+    private static class Entry implements Map.Entry<Integer, String>{
+
         int index;
 
         public Entry(int index) {
@@ -39,7 +40,7 @@ public class CountingMapData extends AbstractMap<Integer,String>{
         }
 
         public String getValue(){
-            return chars[index%chars.length] + Integer.toString(index/chars.length);
+            return chars[index % chars.length] + Integer.toString(index / chars.length);
         }
 
         public String setValue(String value){
@@ -54,8 +55,8 @@ public class CountingMapData extends AbstractMap<Integer,String>{
 
     @Override
     public Set<Map.Entry<Integer, String>> entrySet() {
-        Set<Map.Entry<Integer,String>> entries = new LinkedHashSet<Map.Entry<Integer, String>>();
-        for(int i = 0;i < size;i++){
+        Set<Map.Entry<Integer, String>> entries = new LinkedHashSet<Map.Entry<Integer, String>>();
+        for (int i = 0; i < size; i++){
             entries.add(new Entry(i));
         }
         return entries;
