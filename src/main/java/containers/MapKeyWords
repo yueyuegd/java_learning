@@ -1,0 +1,11 @@
+Map:
+1.他维护的是键值对的关联，可以通过他的键来查找值。
+2.Map的实现有HashMap，TreeMap，LinkedHashMap，WeakHashMap，ConcurrentHashMap，IdentityHashMap
+3.HashMap:Map基于散列表的实现，插入和插叙键值对的开销是固定的，可以通过构造器来设置Map的容量和负载因子
+4.LinkedHashMap:类似于HashMap，查询的速度比HashMap要慢一点，内部使用链表来维护;散列化所有的元素，在遍历的时候又以元素的插入顺序
+返回键值对，如果在构造器中使用LinkedHashMap，使之采用最近最少使用算法的话，对于没有被访问过的元素来说，就会出现在Map的前面。
+5.TreeMap:基于红黑树的实现，查看键或者是键值对的时候会被排序，特点在于所得的结果是经过排序的，
+6.WeakHashMap:弱键映射，允许释放映射所指的对象，如果映射之外没有其他引用指向这个键，则这个键可以被垃圾收集器回收。
+7.ConcurrentHashMap:一种线程安全的Map，不涉及同步加锁。
+8.IdentityHashMap:使用==代替equals来对键进行比较，转为解决特殊问题设计的。
+9.SortedMap:可以使键保持排序状态的Map,TreeMap是其现阶段唯一的实现。
