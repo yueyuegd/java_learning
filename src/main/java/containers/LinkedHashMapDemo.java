@@ -14,7 +14,7 @@ public class LinkedHashMapDemo {
         LinkedHashMap<Integer, String> linkedHashMap =
                 new LinkedHashMap<Integer, String>(new CountingMapData(9));
         System.out.println(linkedHashMap);
-        //构造器的三个参数分别表示容量  负载因子  排序模式:true表示访问模式
+        //构造器的三个参数分别表示容量  负载因子  排序模式:true表示访问模式  被访问过的元素被移到最后---最近最少使用排序模式
         linkedHashMap = new LinkedHashMap<>(16,0.75f,true);
         linkedHashMap.putAll(new CountingMapData(9));
         System.out.println(linkedHashMap);
