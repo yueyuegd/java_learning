@@ -47,6 +47,7 @@ public class Ex9_1 {
     //将ArrayList中所有行都变成大写形式
     public List<String> changeUpcase(List<String> content){
 
+        return null;
     }
 
     public static void main(String[] args) throws IOException{
