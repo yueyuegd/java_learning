@@ -6,4 +6,8 @@ package io;
  * Date:2017/3/28
  */
 public class OSExecuteDemo {
+
+    public static void main(String[] args) {
+         OSExecute.command("javap OSExecuteDemo");
+    }
 }
