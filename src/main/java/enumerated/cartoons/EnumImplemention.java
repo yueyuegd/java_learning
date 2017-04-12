@@ -15,7 +15,7 @@ import java.util.Random;
     SLAPPY,SPANKY,PUNCHY,SILLY,BOUNCY,NUTTY,BOB;
     private Random rand = new Random(47);
     public CartoonCharacter next(){
-        return values()[rand.nextInt(values().length)];
+        return values()[rand.nextIn t(values().length)];
 }
 
 }
